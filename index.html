@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Novie Marathon</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- header section start -->
+    <header>
+        <i class="logo" id="logo"><img src="logo.png" alt=""></i>
+        <!-- <a href="#" class="logo"><i class=""></i>Novie Marathon</a> -->
+        <nav class="navbar">
+             <a href="#home">Home</a>
+             <a href="#favorites">Favorites</a>
+             <a href="#romance">Romance</a>
+             <a href="#family">Family</a>
+             <a href="#drama">Drama</a>
+             <a href="#fantasy">Fantasy</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-heart" id="heart-icon"></i>
+        </div>
+    </header>
+    
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Profile Picture -->
+            <div class="col-md-4 text-center text-md-start">
+              <img src="lei.jpg" alt="Novie Lei L. Lopez" class="rounded-circle img-fluid profile-pic">
+            </div>
+            <!-- Content Section -->
+            <div class="col-md-8 text-md-start">
+              <h5>Hello! My Name is</h5>
+                <h1 class="home-title"><span class="highlight">Novie Lei L. Lopez</span></h1>
+              <p class="home-description">
+                And I love watching movies. This website is where I share my curated lists of anime movies I've watched alongside my thoughts and recommendations. Whether you're seeking your next favorite movie or exploring the genre, this is a space to connect and celebrate our love for anime movies. 
+              </p>
+              <div class="social-icons mt-3">
+                <a href="https://web.facebook.com/novielei.lopez.58/" class="me-3"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/novlpz_/" class="me-3"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/novielopez"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+<!-- Favorites Section -->
+<section class="favorites" id="favorites">
+    <h1>Favorite Anime Movies</h1>
+    <div id="carouselExampleControls" class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/yourname.png" class="d-block w-100" alt="Your Name."> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Your Name.</h5>
+                        <p class="card-text">I’ll never forget how this movie made me feel. It’s a beautiful mix of emotions—love, longing, and this overwhelming feeling of connection. The idea of two people swapping lives and finding each other across time? That’s pure magic. I’d recommend it to anyone who believes in soulmates or destiny.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/yourName.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/weathering.jpg" class="d-block w-100" alt="Weathering with You"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Weathering with You</h5>
+                        <p class="card-text">This movie beautifully intertwines themes of love, sacrifice, and nature’s power with stunning visuals. The soundtrack is mesmerizing and complements the heartfelt moments. For those who enjoyed Your Name or want a compelling story about the choices we make for love, this is a must-watch.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/wWY.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/garden.jpg" class="d-block w-100" alt="The Garden of Words"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Garden of Words</h5>
+                        <p class="card-text">It's like a poem come to life. It's so quiet and intimate, and I loved how the rain almost seemed to be its character. It made me think of how some relationships seem to come at the right moment in our lives, even though they won't last forever. I recommend it for a cozy, rainy day when you want to feel something beautiful.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/tGOW.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/centimeters.jpg" class="d-block w-100" alt="5 Centimeters per Second"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">5 Centimeters per Second</h5>
+                        <p class="card-text">This film is one way to show how time and distance can affect a relationship and how memories remain even as life moves on. It is very masterly how Makoto Shinkai could show the quiet ache of love that was never fulfilled and how time passes. The train scenes and the falling cherry blossoms are metaphors that go deep.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/fiveCPS.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/suzume.jpg" class="d-block w-100" alt="Suzume"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Suzume</h5>
+                        <p class="card-text">It's like an emotional roller coaster when watching Suzume. Loss, healing, and unexpected connections are involved. Additionally, there were moments of warmth and laughter mixed with grief that made me realize that even though doors close, new ones will open. It is something that I'd recommend to anyone who loves fantasy and heartfelt storytelling.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/suzume.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/silent.jpg" class="d-block w-100" alt="A Silent Voice"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">A Silent Voice</h5>
+                        <p class="card-text">It is one of those movies that broke me in the best way ever. It is natural and honest when it comes to redemption, learning how to forgive not just people but to learn about forgiveness oneself. I cry with this movie and feel it, especially in a way that makes you know how hard it is to get into the person. It is a film that touches your heart, leaving you to think.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/aSV.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/pancreas.jpg" class="d-block w-100" alt="I Want to Eat Your Pancreas"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">I Want to Eat Your Pancreas</h5>
+                        <p class="card-text">This emotionally powerful film beautifully explores the fleeting nature of life and the profound impact of human connection. The genuine relationship between the shy protagonist and the lively Sakura is heartwarming and inspiring, serving as a reminder to completely enjoy life's short moments. This film will leave you cherishing the little moments and reflecting on the impact others have on your journey.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/iWTEYP.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/hotarubi.jpg" class="d-block w-100" alt="Hotarubi no Mori e"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hotarubi no Mori e</h5>
+                        <p class="card-text">This film, set in a mystical forest, beautifully portrays an unattainable love between a human and a spirit. The peaceful visuals and pure bond between the characters are both heartwarming and sorrowful due to their inevitable separation. However, if you, like me, struggle with certain characters (like the child), it may leave you feeling a mix of anger and sadness.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/hNME.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card">
+                    <div class="img-wrapper"><img src="favorites/howls.jpg" class="d-block w-100" alt="Howl's Moving Castle"> </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Howl's Moving Castle</h5>
+                        <p class="card-text">This movie is pure magic. I love how it combines a whimsical fantasy world with a heartfelt love story. Plus, Howl is such a dreamy character—it’s impossible not to fall for him. If you’re looking for something like stepping into a fairytale, you can’t go wrong with this one.</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trailerModal" data-video="videos/hMC.mp4">Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- Romance Section -->
+<section id="romance" class="romance">
+    <h1>Romance Movies</h1>
+    <div class="row gx-4 gy-4">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/tGWLTT.jpg" class="card-img-top" alt="The Girl Who Leapt Through Time">
+                <div class="card-body">
+                    <h5 class="card-title">The Girl Who Leapt Through Time</h5>
+                    <p class="card-text">A young math genius solves a complex equation and inadvertently puts a virtual world's artificial intelligence in a position to destroy Earth.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/wOTHeart.jpg" class="card-img-top" alt="Whisper of the Heart">
+                <div class="card-body">
+                    <h5 class="card-title">Whisper of the Heart</h5>
+                    <p class="card-text">A love story between a girl who loves reading books, and a boy who has previously checked out all of the library books she chooses.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/fireworks.jpg" class="card-img-top" alt="Fireworks">
+                <div class="card-body">
+                    <h5 class="card-title">Fireworks</h5>
+                    <p class="card-text">In this sci-fi tinged story of young love and teenage turmoil, a mysterious glowing ball offers Norimichi a second chance at securing his dream date.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/fUOPHill.jpg" class="card-img-top" alt="From Up on Poppy Hill">
+                <div class="card-body">
+                    <h5 class="card-title">From Up on Poppy Hill</h5>
+                    <p class="card-text">It's 1963 and Japan is in the midst of swift modernisation, leaving behind the Second World War's painful memories and focusing on a brighter future, symbolised by the coming year's Tokyo Olympics.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/hal.jpg" class="card-img-top" alt="Hal">
+                <div class="card-body">
+                    <h5 class="card-title">Hal</h5>
+                    <p class="card-text">When Kurumi falls into a reclusive and joyless existence following the tragic death of her boyfriend Hal, an android who resembles Hal is sent to help her cope and to draw her out of her solitude.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/helloWorld.jpg" class="card-img-top" alt="Hello World">
+                <div class="card-body">
+                    <h5 class="card-title">Hello World</h5>
+                    <p class="card-text">A man travels in time from the year 2027 to relive his school years and to correct a bad decision.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/cSOY.jpg" class="card-img-top" alt="Crystal Sky of Yesterday">
+                <div class="card-body">
+                    <h5 class="card-title">Crystal Sky of Yesterday</h5>
+                    <p class="card-text">Tu Xiaoyi, Yao Zhetian and Qi Jingxuan are high school students in a small town, Lanxi, in southern China. This is a story about dreams, friendship, family and first love in their youthful days.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/oceanwaves.jpg" class="card-img-top" alt="Ocean Waves">
+                <div class="card-body">
+                    <h5 class="card-title">Ocean Waves</h5>
+                    <p class="card-text">As he journeys back from Tokyo to his high school for a reunion, Taku Morisaki recounts his memories of his school days, focussing in particular on a love triangle that developed between him and two of his friends.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/tAOTH.jpg" class="card-img-top" alt="The Anthem of the Heart">
+                <div class="card-body">
+                    <h5 class="card-title">The Anthem of the Heart</h5>
+                    <p class="card-text">A girl who carries the guilt of breaking up her family with carelessly uttered words when she was young is suddenly cursed by a mysterious Egg Fairy so that she can never hurt anybody with her words again.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/whisker.jpg" class="card-img-top" alt="A Whisker Away">
+                <div class="card-body">
+                    <h5 class="card-title">A Whisker Away</h5>
+                    <p class="card-text">The line between human and animal starts to blur when a peculiar girl transforms herself into a cat to gain the attention of her crush.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/rYW.jpg" class="card-img-top" alt="Ride Your Wave">
+                <div class="card-body">
+                    <h5 class="card-title">Ride Your Wave</h5>
+                    <p class="card-text">Surf-loving college student Hinako must find joy and purpose in life again, after a terrible tragedy results in the death of her firefighter boyfriend Minato.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/zutto.jpeg" class="card-img-top" alt="I've Always Liked You">
+                <div class="card-body">
+                    <h5 class="card-title">I've Always Liked You</h5>
+                    <p class="card-text">A girl finally confessed her love, but she retracted it as a joke when her love interest did not show any reaction. She will need to gather up her courage to confess for real.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/soda.jpg" class="card-img-top" alt="Words Bubble Up Like Soda Pop">
+                <div class="card-body">
+                    <h5 class="card-title">Words Bubble Up Like Soda Pop</h5>
+                    <p class="card-text">After meeting one bright, sunny day, a shy boy who expresses himself through haiku and a bubbly but self-conscious girl share a brief, magical summer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/toMe.jpg" class="card-img-top" alt="To Me, the One Who Loved You">
+                <div class="card-body">
+                    <h5 class="card-title">To Me, the One Who Loved You</h5>
+                    <p class="card-text">The film follows Koyomi Hidaka and Shiori Satō falling in love with each other, but their parents' remarriage has led them to elope to a parallel world where they are not stepsiblings.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/toEveryYou.jpg" class="card-img-top" alt="To Every You I've Loved Before">
+                <div class="card-body">
+                    <h5 class="card-title">To Every You I've Loved Before</h5>
+                    <p class="card-text">The film follows high-school student Koyomi Takasaki meeting Kazune Takigawa, who reveals to him that he is her boyfriend in the 85th parallel world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/flavors.jpg" class="card-img-top" alt="Flavors of Youth">
+                <div class="card-body">
+                    <h5 class="card-title">Flavors of Youth</h5>
+                    <p class="card-text">Three stories of youth from different cities in China: memories locked in a bowl of steaming noodles, a fading beauty discovering her way, and a bittersweet first love.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/loveMe.jpg" class="card-img-top" alt="Love Me, Love Me Not
+                ">
+                <div class="card-body">
+                    <h5 class="card-title">Love Me, Love Me Not
+                    </h5>
+                    <p class="card-text">The love affairs of four schoolkids: a romantic, a pragmatist, an airhead and a lothario.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/tTTSTEoG.jpg" class="card-img-top" alt="The Tunnel to Summer, the Exit of Goodbyes">
+                <div class="card-body">
+                    <h5 class="card-title">The Tunnel to Summer, the Exit of Goodbyes</h5>
+                    <p class="card-text">In a sleepy country town, a traumatized boy and a transfer student from Tokyo stumble upon a time-bending tunnel that may grant them their every wish.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Family Section -->
+<section id="family" class="family">
+    <h1 class="heading">Family Movies</h1>
+    <div class="row gx-4 gy-4">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/only.jpg" class="card-img-top" alt="Only Yesterday">
+                <div class="card-body">
+                    <h5 class="card-title">Only Yesterday</h5>
+                    <p class="card-text">A twenty-seven-year-old office worker travels to the countryside while reminiscing about her childhood in Tokyo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/heart.jpg" class="card-img-top" alt="Heart and Yummie">
+                <div class="card-body">
+                    <h5 class="card-title">Heart and Yummie</h5>
+                    <p class="card-text">A Tyrannosaurus rex is raised as an herbivore and becomes friends with an Ankylosaurus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/theWR.jpg" class="card-img-top" alt="The Wind Rises">
+                <div class="card-body">
+                    <h5 class="card-title">The Wind Rises</h5>
+                    <p class="card-text">Jiro Horikoshi studies assiduously to fulfill his aim of becoming an aeronautical engineer. As WWII begins, fighter aircraft designed by him end up getting used by the Japanese Empire against its foes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Drama Section -->
+<section id="drama" class="drama">
+    <h1 class="heading">Drama Movies</h1>
+    <div class="row gx-4 gy-4">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/gOTF.jpg" class="card-img-top" alt="Grave of the Fireflies">
+                <div class="card-body">
+                    <h5 class="card-title">Grave of the Fireflies</h5>
+                    <p class="card-text">A young boy and his little sister struggle to survive in Japan during World War II.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/maquia.jpg" class="card-img-top" alt="Maquia: When the Promised Flower Blooms">
+                <div class="card-body">
+                    <h5 class="card-title">Maquia: When the Promised Flower Blooms</h5>
+                    <p class="card-text">Maquia, a teenager, belongs to the Iorph community whose members can live for hundreds of years. But her life changes when the Iorph settlement is invaded and she comes across an orphan.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/anohana.jpg" class="card-img-top" alt="Anohana: The Flower We Saw That Day - The Movie">
+                <div class="card-body">
+                    <h5 class="card-title">Anohana: The Flower We Saw That Day - The Movie</h5>
+                    <p class="card-text">A group of friends were separated when one of them died in an accident. Later on she comes back as a ghost trying to get into heaven but to do that her friends must grant her a wish.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Fantasy Section -->
+<section id="fantasy" class="fantasy">
+    <h1 class="heading">Fantasy Movies</h1>
+    <div class="row gx-4 gy-4">
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/spiritedA.jpg" class="card-img-top" alt="Spirited Away">
+                <div class="card-body">
+                    <h5 class="card-title">Spirited Away</h5>
+                    <p class="card-text">During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, and where humans are changed into beasts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/kiki.jpg" class="card-img-top" alt="Kiki's Delivery Service">
+                <div class="card-body">
+                    <h5 class="card-title">Kiki's Delivery Service</h5>
+                    <p class="card-text">Along with her black cat Jiji, Kiki settles in a seaside town and starts a high-flying delivery service. Here begins her magical encounter with independence and responsibility, making lifelong friends and finding her place in the world.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/castle.jpg" class="card-img-top" alt="Castle in the Sky">
+                <div class="card-body">
+                    <h5 class="card-title">Castle in the Sky</h5>
+                    <p class="card-text">Pazu's life changes when he meets Sheeta, a girl whom pirates are chasing for her crystal amulet, which has the potential to locate Laputa, a legendary castle floating in the sky.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/totoro.jpg" class="card-img-top" alt="My Neighbor Totoro">
+                <div class="card-body">
+                    <h5 class="card-title">My Neighbor Totoro</h5>
+                    <p class="card-text">When two girls move to the country to be near their ailing mother, they have adventures with the wondrous forest spirits who live nearby.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/ponyo.jpg" class="card-img-top" alt="Ponyo">
+                <div class="card-body">
+                    <h5 class="card-title">Ponyo</h5>
+                    <p class="card-text">A five-year-old boy develops a relationship with Ponyo, a young goldfish princess who longs to become a human after falling in love with him.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="movie pics/wolf.jpg" class="card-img-top" alt="Wolf Children">
+                <div class="card-body">
+                    <h5 class="card-title">Wolf Children</h5>
+                    <p class="card-text">After her werewolf lover unexpectedly dies in an accident while hunting for food for their children, a young woman must find ways to raise the werewolf son and daughter that she had with him while keeping their trait hidden from society.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trailer Modal -->
+<div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="trailerModalLabel">Trailer</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <video id="trailerVideo" controls style="width: 100%; height: auto;">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+ <section class="footer py-3">
+    <div class="container">
+        <p>&copy; 2024 Novie Marathon. All rights reserved.</p>
+    </div>
+ </section>
+
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- link swiper file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- custome js file link -->
+    <script src="main.js"></script>
+</body>
+</html>
+
